@@ -1,0 +1,144 @@
+@charset "utf-8";
+/*
+css document
+*/
+
+
+.screenButton {
+  background-color: #0000FF;
+  border: 5px solid #F5F0E6;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 50px;
+  /* cursor: cell; */
+}
+
+.screenButton:hover {
+  background-color: #7D8CFF;
+  border: 5px solid #F5F0E6;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 50px;
+  /* cursor: cell; */
+}
+
+.screenButton:active {
+  background-color: #7D8CFF;
+  border: 5px solid #F5F0E6;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 50px;
+  /* cursor: cell; */
+}
+
+.nextButton {
+  background-color: #0000FF;
+  border: 5px solid #F5F0E6;
+  color: white;
+  padding: 25px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100px;
+  border-radius: 100px;
+  /* cursor: cell; */
+}
+
+.nextButton:hover {
+  background-color: #7D8CFF;
+  border: 5px solid #F5F0E6;
+  color: white;
+  padding: 25px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100px;
+  border-radius: 100px;
+  /* cursor: cell; */
+}
+
+.nextButton:active {
+  background-color: #7D8CFF;
+  border: 5px solid #F5F0E6;
+  color: white;
+  padding: 25px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100px;
+  border-radius: 100px;
+  /* cursor: cell; */
+}
+
+.legenda {
+  font-family:SuisseIntl-Medium;
+  font-size: 16px;
+  color: #0000FF;
+  /* cursor: cell; */
+}
+
+
+.legenda:hover {
+  font-family:SuisseIntl-Medium;
+  font-size: 16px;
+  color: #7D8CFF;
+  /* cursor: cell; */
+}
+
+
+.about {
+  font-family:SuisseIntl-Medium;
+  font-size: 24px;
+  color: #F5F0E6;
+  /* cursor: cell; */
+}
+
+
+.about:hover {
+  font-family:SuisseIntl-Medium;
+  font-size: 24px;
+  color: #7D8CFF;
+  /* cursor: cell; */
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100px;
+  height: 10px;
+  border-radius: 10px;
+  background: #95EFB3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #7D8BFF;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #7D8BFF;
+  cursor: pointer;
+}

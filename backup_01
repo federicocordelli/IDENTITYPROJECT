@@ -1,0 +1,450 @@
+//BRAND IDENTITY PROJECT - FEDERICO CORDELLI - POLIMI - 2022/23
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+//BRANDED ELEMENTS
+//fonts
+let SuisseIntl;
+let SuisseWorks;
+let SuisseIntlMono;
+
+//Brand color variables
+let brandBlack = "#000000"
+let brandWhite = "#FFFFFF"
+let brandBlue = "#0000FF"
+let brandMint = "#96F0B4"
+let brandLila = "#7D8CFF"
+
+//------------------------------------------------------------------------------
+//investigated values
+let awareness = 13;
+let activity = 13;
+let coherence = 13;
+let selfproduction = 13;
+
+//Final colors variables
+//awareness color
+let r1;
+let g1;
+let b1;
+
+//activity color
+let r2;
+let g2;
+let b2;
+
+//coherence color
+let r3;
+let g3;
+let b3;
+
+//selfproduction color
+let r4;
+let g4;
+let b4;
+
+//sphere
+let cromoAvatar;
+let obj;
+let objSaved;
+
+//------------------------------------------------------------------------------
+//buttons
+//------------------------------------------------------------------------------
+//download cromo avatar button
+var screenButton;
+
+//button colors variables
+let buttonColor;
+let buttonStrokeColor;
+let buttonTextColor;
+
+
+//------------------------------------------------------------------------------
+//utilities---------------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+//avanzamento
+let pageNumber = 4;
+
+
+
+
+function preload() {
+SuisseIntl = loadFont('addons/SuisseIntl-Book.otf');
+SuisseWorks = loadFont('addons/SuisseWorks-Medium.otf');
+SuisseIntlMono = loadFont('addons/SuisseIntlMono-Regular.otf');
+
+}
+
+function setup() {
+  createCanvas(windowWidth, windowHeight, WEBGL);
+  //noSmooth();
+
+//------------------------------------------------------------------------------
+//buttons
+//------------------------------------------------------------------------------
+
+if (pageNumber === 4) {
+  //download cromo avatar button
+screenButton = createButton('DOWNLOAD CROMO AVATAR');
+screenButton.addClass("screenButton");
+screenButton.mouseClicked(downloadCromoAvatar);
+}
+
+obj = createGraphics(400,400,WEBGL);
+}
+
+function draw() {
+  background(brandBlack);
+
+//---------------------------------LAST "PAGE"---------------------------------
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+if (pageNumber === 4) {
+  //rgb values
+  //---------------------------------------------------------------------------
+  //---------------------------------------------------------------------------
+  //---------------------------------------------------------------------------
+    //AWARENESS
+  if (awareness >= 0 && awareness <=3) {
+  r1 = 230;
+  g1 = 255;
+  b1 = 50;
+  } else if (awareness >= 4 && awareness <=6) {
+  r1 = 255;
+  g1 = 76;
+  b1 = 21;
+  } else if (awareness >= 7 && awareness <=9) {
+  r1 = 255;
+  g1 = 182;
+  b1 = 0;
+  } else if (awareness >= 10 && awareness <=12) {
+  r1 = 245;
+  g1 = 50;
+  b1 = 70;
+  } else if (awareness >= 13 && awareness <=15) {
+  r1 = 219;
+  g1 = 210;
+  b1 = 97;
+  }
+
+  //ACTIVITY
+if (activity >= 0 && activity <=3) {
+  r2 = 255;
+  g2 = 3;
+  b2 = 171;
+} else if (activity >= 4 && activity <=6) {
+r2 = 95;
+g2 = 44;
+b2 = 255;
+} else if (activity >= 7 && activity <=9) {
+r2 = 181;
+g2 = 26;
+b2 = 181;
+} else if (activity >= 10 && activity <=12) {
+r2 = 247;
+g2 = 173;
+b2 = 212;
+} else if (activity >= 13 && activity <=15) {
+r2 = 247;
+g2 = 105;
+b2 = 139;
+}
+
+//COHERENCE
+if (coherence >= 0 && coherence <=3) {
+r3 = 85;
+g3 = 155;
+b3 = 4;
+} else if (coherence >= 4 && coherence <=6) {
+r3 = 191;
+g3 = 247;
+b3 = 17;
+} else if (coherence >= 7 && coherence <=9) {
+r3 = 80;
+g3 = 234;
+b3 = 150;
+} else if (coherence >= 10 && coherence <=12) {
+r3 = 9;
+g3 = 178;
+b3 = 113;
+} else if (coherence >= 13 && coherence <=15) {
+r3 = 30;
+g3 = 173;
+b3 = 149;
+}
+
+//SELF PRODUCTION
+if (selfproduction >= 0 && selfproduction <=3) {
+r4 = 10;
+g4 = 196;
+b4 = 239;
+} else if (selfproduction >= 4 && selfproduction <=6) {
+r4 = 74;
+g4 = 139;
+b4 = 255;
+} else if (selfproduction >= 7 && selfproduction <=9) {
+r4 = 9;
+g4 = 100;
+b4 = 112;
+} else if (selfproduction >= 10 && selfproduction <=12) {
+r4 = 93;
+g4 = 111;
+b4 = 219;
+} else if (selfproduction >= 13 && selfproduction <=15) {
+r4 = 127;
+g4 = 229;
+b4 = 229;
+}
+
+//score values
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
+let designScore= awareness+activity+coherence+selfproduction;
+let selfDesign;
+
+if (designScore<=15) {
+  selfDesign = "C'È ANCORA MOLTO DA FARE";
+} else if (designScore>15 && designScore<=30) {
+  selfDesign = "SEI SULLA GIUSTA STRADA";
+} else if (designScore>30 && designScore<=45) {
+  selfDesign = "C'È DEL DESIGN IN TE";
+} else if (designScore>45 && designScore<=60) {
+  selfDesign = "SAPEVI DI ESSERE UN DESIGNER?";
+}
+
+//LAYOUT
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
+
+//box
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
+//box rect
+push();
+fill(brandBlack);
+stroke(brandBlue);
+strokeWeight(10);
+rect((-width/2),(-height/2),width,(height/5));
+pop();
+
+//box text
+push();
+textAlign(CENTER,CENTER);
+fill(brandWhite);
+noStroke();
+textFont(SuisseIntl);
+textSize(50);
+text("RISULTATO:",0,(-height/5)*2);
+pop();
+
+
+//variables and resaults
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
+//single colors (sphere)
+//---------------------------------------------------------------------------
+//Awareness color value
+push();
+noStroke();
+fill(r1,g1,b1);
+circle(-height/4,-height/8,height/14);
+pop();
+
+//activity color value
+push();
+noStroke();
+fill(r2,g2,b2);
+circle(-height/4,height/8,height/14);
+pop();
+
+//coherence color value
+push();
+noStroke();
+fill(r3,g3,b3);
+circle(height/4,-height/8,height/14);
+pop();
+
+//self production color value
+push();
+noStroke();
+fill(r4,g4,b4);
+circle(height/4,height/8,height/14);
+pop();
+
+//color text (color values)
+//awareness text
+push();
+textAlign(RIGHT,CENTER);
+textFont(SuisseIntl);
+fill(brandMint);
+textSize(24);
+text("AT: "+activity,(-height/4)-height/14,height/8);
+pop();
+
+//activity text
+push();
+textAlign(RIGHT,CENTER);
+textFont(SuisseIntl);
+fill(brandMint);
+textSize(24);
+text("AW: "+awareness,(-height/4)-height/14,-height/8);
+pop();
+
+//coherence text
+push();
+textAlign(LEFT,CENTER);
+textFont(SuisseIntl);
+fill(brandMint);
+textSize(24);
+text("CO: "+coherence,(height/4)+height/14,height/8);
+pop();
+
+//self production text
+push();
+textAlign(LEFT,CENTER);
+textFont(SuisseIntl);
+fill(brandMint);
+textSize(24);
+text("SP: "+selfproduction,(height/4)+height/14,-height/8);
+pop();
+
+
+//Single colors (summary)
+//---------------------------------------------------------------------------
+//awareness color value
+push();
+noStroke();
+fill(r1,g1,b1);
+square((width/2)-(height/22)-15,(height/2)-(height/22)-15,height/22);
+pop();
+
+//activity color value
+push();
+noStroke();
+fill(r2,g2,b2);
+square((width/2)-(height/22)-15,(height/2)-((height/22)*2)-20,height/22);
+pop();
+
+//coherence color value
+push();
+noStroke();
+fill(r3,g3,b3);
+square((width/2)-(height/22)-15,(height/2)-((height/22)*3)-30,height/22);
+pop();
+
+//self production color value
+push();
+noStroke();
+fill(r4,g4,b4);
+square((width/2)-(height/22)-15,(height/2)-((height/22)*4)-45,height/22);
+pop();
+
+//summary text - design score
+push();
+textAlign(RIGHT,TOP);
+textFont(SuisseIntlMono);
+fill(brandLila);
+textSize(20);
+text("DESIGN SCORE: "+designScore+"/60",(width/2)-15,(-height/5)*1.3);
+fill(brandMint);
+text("["+selfDesign+"]",(width/2)-15,(-height/5)*1.16);
+pop();
+
+//summary text - precisazinoe
+push();
+textAlign(LEFT,TOP);
+textFont(SuisseIntlMono);
+fill(brandLila);
+textSize(16);
+text("*I VALORI DEI PARAMETRI \nAW-AT-CO-SP SONO ESPRESSI IN 15ESIMI",(-width/2)+15,(-height/5)*1.3);
+pop();
+
+//summary text - summary
+push();
+textAlign(RIGHT,CENTER);
+textFont(SuisseIntlMono);
+fill(brandMint);
+textSize(16);
+text("SUMMARY: AW: "+awareness+" AT: "+activity+" CO: "+coherence+" SP: "+selfproduction,(width/2)-(height/22)-30,(height/2)-25);
+pop();
+
+//summary text - scroll advice
+push();
+textAlign(CENTER,CENTER);
+textFont(SuisseIntlMono);
+fill(brandLila);
+textSize(16);
+text("SCROLL = IDENTITY MAP",0,(height/2)-25);
+pop();
+
+//---------------------------------------------------------------------------
+//lights and sphere
+  let locX1 = -width/2;
+  let locY1 = height;
+
+  let locX2 = width;
+  let locY2 = height;
+
+  let locX3 = width/2;
+  let locY3 = - height/2;
+
+  let locX4 = -width/2;
+  let locY4 = -height/2;
+/*
+  pointLight(r1, g1, b1, locX1, locY1, height/3);
+
+  pointLight(r2, g2, b2, locX2, locY2, height/3);
+
+  pointLight(r3, g3, b3, locX3, locY3, height/3);
+
+  pointLight(r4,g4,b4, locX4, locY4, height/3);
+*/
+
+
+  obj.background(0);
+  obj.noStroke();
+  obj.pointLight(r1, g1, b1, locX1, locY1, height/3);
+  obj.pointLight(r2, g2, b2, locX2, locY2, height/3);
+  obj.pointLight(r3, g3, b3, locX3, locY3, height/3);
+  obj.pointLight(r4,g4,b4, locX4, locY4, height/3);
+  obj.sphere(height/8);
+  objSaved = image(obj, -200, -200);
+
+
+
+  noStroke();
+  push();
+  /*
+  rotateY(millis() / 5000);
+  strokeWeight(0.5);
+  stroke(r4,g4,b4);
+  */
+  cromoAvatar = sphere(height/8);
+  pop();
+
+  //----------------------------------------------------------------------------
+  //download cromo avatar button
+screenButton.position((width/2)-200, (height/5)*4);
+
+}
+}
+
+function downloadCromoAvatar() {
+/*
+  document.location.reload();
+  return false;
+*/
+  save(obj, "Cromo Avatar_IP.jpg")
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth,windowHeight, WEBGL);
+  return false;
+
+
+}
