@@ -373,6 +373,10 @@ if(loadingHome < width) {
     text("[LOADING HOME]",0,(-height/5)*2);
     pop();
 
+    //----------------------------------------------------------------------------
+  startButton.hide();
+  about.hide();
+
   }
 } else if (loadingHome >= width){
   push();
