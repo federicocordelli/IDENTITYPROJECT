@@ -379,6 +379,10 @@ if(loadingHome < width) {
 
   }
 } else if (loadingHome >= width){
+
+  startButton.show();
+  about.show();
+
   push();
   noStroke();
   fill(brandBlue);
