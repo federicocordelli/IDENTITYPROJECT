@@ -3230,7 +3230,7 @@ textAlign(RIGHT,CENTER);
 textFont(SuisseIntl);
 fill(brandMint);
 textSize(24);
-text("AT: "+activity+"/15",(-height/4)-height/14,height/8);
+text("AT: "+activity+"/15",(-height/12)-height/14,height/8);
 pop();
 
 //activity text
@@ -3239,7 +3239,7 @@ textAlign(RIGHT,CENTER);
 textFont(SuisseIntl);
 fill(brandMint);
 textSize(24);
-text("AW: "+awareness+"/15",(-height/4)-height/14,-height/8);
+text("AW: "+awareness+"/15",(-height/12)-height/14,-height/8);
 pop();
 
 //coherence text
@@ -3248,7 +3248,7 @@ textAlign(LEFT,CENTER);
 textFont(SuisseIntl);
 fill(brandMint);
 textSize(24);
-text("CO: "+coherence+"/15",(height/4)+height/14,height/8);
+text("CO: "+coherence+"/15",(height/12)+height/14,height/8);
 pop();
 
 //self production text
@@ -3257,7 +3257,7 @@ textAlign(LEFT,CENTER);
 textFont(SuisseIntl);
 fill(brandMint);
 textSize(24);
-text("SP: "+selfproduction+"/15",(height/4)+height/14,-height/8);
+text("SP: "+selfproduction+"/15",(height/12)+height/14,-height/8);
 pop();
 
 //------------------------------------------------------------------------------
