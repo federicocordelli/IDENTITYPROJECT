@@ -1694,7 +1694,7 @@ if (atHeight1of1<((-height/5)*1.5)) {
         noStroke();
         textFont(SuisseWorks);
         textSize(50);
-        text("0-20%",(-width/5)*2,0);
+        text("0-\n20%",(-width/5)*2,0);
         pop();
 
         push();
@@ -1703,7 +1703,7 @@ if (atHeight1of1<((-height/5)*1.5)) {
         noStroke();
         textFont(SuisseWorks);
         textSize(50);
-        text("20-40%",(-width/5),0);
+        text("20-\n40%",(-width/5),0);
         pop();
 
         push();
@@ -1712,7 +1712,7 @@ if (atHeight1of1<((-height/5)*1.5)) {
         noStroke();
         textFont(SuisseWorks);
         textSize(50);
-        text("40-60%",0,0);
+        text("40-\n60%",0,0);
         pop();
 
         push();
@@ -1721,7 +1721,7 @@ if (atHeight1of1<((-height/5)*1.5)) {
         noStroke();
         textFont(SuisseWorks);
         textSize(50);
-        text("60-80%",(width/5),0);
+        text("60-\n80%",(width/5),0);
         pop();
 
         push();
@@ -1730,7 +1730,7 @@ if (atHeight1of1<((-height/5)*1.5)) {
         noStroke();
         textFont(SuisseWorks);
         textSize(50);
-        text("80-100%",(width/5)*2,0);
+        text("80-\n100%",(width/5)*2,0);
         pop();
 
 
@@ -2313,7 +2313,7 @@ ansColor1 = brandWhite;
     noStroke();
     textFont(SuisseWorks);
     textSize(50);
-    text("0-20%",(-width/5)*2,0);
+    text("0-\n20%",(-width/5)*2,0);
     pop();
 
     push();
@@ -2322,7 +2322,7 @@ ansColor1 = brandWhite;
     noStroke();
     textFont(SuisseWorks);
     textSize(50);
-    text("20-40%",(-width/5),0);
+    text("20-\n40%",(-width/5),0);
     pop();
 
     push();
@@ -2331,7 +2331,7 @@ ansColor1 = brandWhite;
     noStroke();
     textFont(SuisseWorks);
     textSize(50);
-    text("40-60%",0,0);
+    text("40-\n60%",0,0);
     pop();
 
     push();
@@ -2340,7 +2340,7 @@ ansColor1 = brandWhite;
     noStroke();
     textFont(SuisseWorks);
     textSize(50);
-    text("60-80%",(width/5),0);
+    text("60-\n80%",(width/5),0);
     pop();
 
     push();
@@ -2349,7 +2349,7 @@ ansColor1 = brandWhite;
     noStroke();
     textFont(SuisseWorks);
     textSize(50);
-    text("80-100%",(width/5)*2,0);
+    text("80-\n100%",(width/5)*2,0);
     pop();
 
 /*
@@ -2518,7 +2518,7 @@ ansColor1 = brandWhite;
         noStroke();
         textFont(SuisseWorks);
         textSize(50);
-        text("0-20%",(-width/5)*2,0);
+        text("0-\n20%",(-width/5)*2,0);
         pop();
 
         push();
@@ -2527,7 +2527,7 @@ ansColor1 = brandWhite;
         noStroke();
         textFont(SuisseWorks);
         textSize(50);
-        text("20-40%",(-width/5),0);
+        text("20-\n40%",(-width/5),0);
         pop();
 
         push();
@@ -2536,7 +2536,7 @@ ansColor1 = brandWhite;
         noStroke();
         textFont(SuisseWorks);
         textSize(50);
-        text("40-60%",0,0);
+        text("40-\n60%",0,0);
         pop();
 
         push();
@@ -2545,7 +2545,7 @@ ansColor1 = brandWhite;
         noStroke();
         textFont(SuisseWorks);
         textSize(50);
-        text("60-80%",(width/5),0);
+        text("60-\n80%",(width/5),0);
         pop();
 
         push();
@@ -2554,7 +2554,7 @@ ansColor1 = brandWhite;
         noStroke();
         textFont(SuisseWorks);
         textSize(50);
-        text("80-100%",(width/5)*2,0);
+        text("80-\n100%",(width/5)*2,0);
         pop();
 
 
