@@ -254,7 +254,7 @@ nextButton.mouseClicked(nextQuestion);
   //buttons
 //------------------------------------------------------------------------------
   //download cromo avatar button
-screenButton = createButton('DOWNLOAD CROMO AVATAR');
+screenButton = createButton('DOWNLOAD CROMOAVATAR');
 screenButton.addClass("screenButton");
 screenButton.mouseClicked(downloadCromoAvatar);
 

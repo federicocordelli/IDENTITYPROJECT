@@ -254,7 +254,7 @@ nextButton.mouseClicked(nextQuestion);
   //buttons
 //------------------------------------------------------------------------------
   //download cromo avatar button
-screenButton = createButton('DOWNLOAD CROMO AVATAR');
+screenButton = createButton('DOWNLOAD CROMOAVATAR');
 screenButton.addClass("screenButton");
 screenButton.mouseClicked(downloadCromoAvatar);
 
@@ -424,7 +424,7 @@ fill(149,239,179,scrollText);
 textAlign(CENTER,CENTER);
 textFont(SuisseIntlMono);
 textSize(30);
-text("SCROLL",0,(-height/5));
+text("BENVENUTO NELL'IDENTITY PROJECT! :)",0,(-height/5));
 pop();
   //----------------------------------------------------------------------------
   //start button position
@@ -467,7 +467,7 @@ pop();
    noStroke();
    textFont(SuisseIntl);
    textSize(35);
-   text("BENVENUTO NELL'IDENTITY PROJECT! :)",0,(-height/5)*2);
+   text("IDENTITY PROJECT: UN'ESPERIENZA DIGITALE \nCHE PROFILERÀ LA TUA CAPACITÀ \nDI FARE PERSONAL BRANDING. \nAL TERMINE DELL'ESPERIENZA \nOTTERRAI IL TUO CROMOAVATAR, \nCHE PUOI USARE COME IMMAGINE DI PROFILO \n[MAGGIORI INFORMAZIONI NELLA VERSIONE DESKTOP]",0,(-height/5)*2);
    pop();
  } else if(scroll > height && scroll <= 2*height) {
    //box text
@@ -581,7 +581,7 @@ nextButton.position((width/2)-240, (height/5)*3.7);
  //-----------------------------------------------------------------------------
  //-----------------------------------------------------------------------------
  //-----------------------------------------------------------------------------
-    quest = "QUANTO STAI ATTENTO/A ALL'IMMAGINE CHE DAI SUI SOCIAL?";
+    quest = "QUANTO STAI ATTENTO/A \nALL'IMMAGINE CHE DAI SUI SOCIAL?";
 
 
 // inizio animazione entrata
@@ -709,6 +709,7 @@ if (awWidth1of1<(width/5)*1.5) {
   text("5",(width/5)*2,0);
   pop();
 
+/*
 // cambio colore in hover
   if (mouseX >= (width/5)*4 && mouseY > height/5) {
 ansColor5 = brandLila;
@@ -742,6 +743,7 @@ ansColor1 = brandWhite;
   ansColor2 = brandMint;
   ansColor1 = brandLila;
 }
+*/
 
 }
 
@@ -751,7 +753,7 @@ ansColor1 = brandWhite;
 
 } else if(nxtNumber === 1) {
 
-quest = "QUANTO TI RITIENI CAPACE DI RAPPRESENTARTI SUI SOCIAL?";
+quest = "QUANTO TI RITIENI CAPACE \nDI RAPPRESENTARTI SUI SOCIAL?";
 
 
 // inizio animazione entrata
@@ -915,6 +917,7 @@ if (awWidth2of1<(width/5)*1.5) {
   text("5",(width/5)*2,0);
   pop();
 
+/*
 // cambio colore in hover
   if (mouseX >= (width/5)*4 && mouseY > height/5) {
 ansColor5 = brandLila;
@@ -948,6 +951,7 @@ ansColor1 = brandWhite;
   ansColor2 = brandMint;
   ansColor1 = brandLila;
 }
+*/
 
 }
 //------------------------------------------------------------------------------
@@ -955,7 +959,7 @@ ansColor1 = brandWhite;
 //------------------------------------------------------------------------------
 } else if(nxtNumber === 2) {
 
-quest = "QUANTO SEI SODDISFATTO/A DELL'IMMAGINE CHE DAI DI TE SUI SOCIAL?";
+quest = "QUANTO SEI SODDISFATTO/A \nDELL'IMMAGINE CHE DAI \nDI TE SUI SOCIAL?";
 
 
 // inizio animazione entrata
@@ -1119,6 +1123,7 @@ if (awWidth3of1<(width/5)*1.5) {
   text("5",(width/5)*2,0);
   pop();
 
+/*
 // cambio colore in hover
   if (mouseX >= (width/5)*4 && mouseY > height/5) {
 ansColor5 = brandLila;
@@ -1152,6 +1157,7 @@ ansColor1 = brandWhite;
   ansColor2 = brandMint;
   ansColor1 = brandLila;
 }
+*/
 
 }
 
@@ -1160,7 +1166,7 @@ ansColor1 = brandWhite;
 //-----------------------------------------------------------------------------
 //-----------------------------------------------------------------------------
 //-----------------------------------------------------------------------------
-quest = "CON CHE FREQUENZA PUBBLICHI SUI SOCIAL?";
+quest = "CON CHE FREQUENZA \nPUBBLICHI SUI SOCIAL?";
 
 // inizio animazione entrata
 if (atHeight1of1<((-height/5)*1.5)) {
@@ -1321,7 +1327,7 @@ if (atHeight1of1<((-height/5)*1.5)) {
       text("5",(width/5)*2,0);
       pop();
 
-
+/*
     // cambio colore in hover
       if (mouseX >= (width/5)*4 && mouseY > height/5) {
     ansColor3 = brandLila;
@@ -1355,7 +1361,7 @@ if (atHeight1of1<((-height/5)*1.5)) {
       ansColor1 = brandWhite;
       ansColor2 = brandLila;
     }
-
+*/
 
 
 
@@ -1363,7 +1369,7 @@ if (atHeight1of1<((-height/5)*1.5)) {
 
 
 } else if (nxtNumber===4) {
-  quest = "QUANTO STAI ATTENTO/A A CIÒ CHE PUBBLICHI?";
+  quest = "QUANTO STAI ATTENTO/A \nA CIÒ CHE PUBBLICHI?";
 
   // inizio animazione entrata
   if (atHeight2of1<((-height/5)*1.5)) {
@@ -1525,6 +1531,7 @@ if (atHeight1of1<((-height/5)*1.5)) {
         pop();
 
 
+/*
       // cambio colore in hover
         if (mouseX >= (width/5)*4 && mouseY > height/5) {
           ansColor5 = brandLila;
@@ -1558,14 +1565,14 @@ if (atHeight1of1<((-height/5)*1.5)) {
         ansColor2 = brandMint;
         ansColor1 = brandLila;
       }
-
+*/
 
 
 
     }
 
 } else if (nxtNumber===5){
-  quest = "IN CHE PERCENTUALE FOTOGRAFI PER PUBBLICARE SUI SOCIAL?";
+  quest = "IN CHE PERCENTUALE FOTOGRAFI \nPER PUBBLICARE SUI SOCIAL?";
 
   // inizio animazione entrata
   if (atHeight3of1<((-height/5)*1.5)) {
@@ -1727,6 +1734,7 @@ if (atHeight1of1<((-height/5)*1.5)) {
         pop();
 
 
+/*
       // cambio colore in hover
         if (mouseX >= (width/5)*4 && mouseY > height/5) {
       ansColor3 = brandLila;
@@ -1760,7 +1768,7 @@ if (atHeight1of1<((-height/5)*1.5)) {
         ansColor1 = brandWhite;
         ansColor2 = brandLila;
       }
-
+*/
 
 
 
@@ -1773,7 +1781,7 @@ if (atHeight1of1<((-height/5)*1.5)) {
  //-----------------------------------------------------------------------------
  //-----------------------------------------------------------------------------
 
-quest = "QUANTO TI SENTI RAPPRESENTATO/A DALL'IMMAGINE DI PROFILO?"
+quest = "QUANTO TI SENTI RAPPRESENTATO/A \nDALL'IMMAGINE DI PROFILO?"
 
 // inizio animazione entrata
 if (coWidth1of1>(width/5)*1.5) {
@@ -1936,6 +1944,7 @@ if (coWidth1of1>(width/5)*1.5) {
   text("5",(width/5)*2,0);
   pop();
 
+/*
 // cambio colore in hover
   if (mouseX >= (width/5)*4 && mouseY > height/5) {
 ansColor5 = brandLila;
@@ -1969,13 +1978,14 @@ ansColor1 = brandWhite;
   ansColor2 = brandMint;
   ansColor1 = brandLila;
 }
+*/
 
 }
 
 
 } else if(nxtNumber === 7) {
 
-  quest = "QUANTO SONO COERENTI I TUOI POST TRA LORO?"
+  quest = "QUANTO SONO COERENTI \nI TUOI POST TRA LORO?"
 
   // inizio animazione entrata
   if (coWidth2of1>(width/5)*1.5) {
@@ -2138,6 +2148,7 @@ ansColor1 = brandWhite;
     text("5",(width/5)*2,0);
     pop();
 
+/*
   // cambio colore in hover
     if (mouseX >= (width/5)*4 && mouseY > height/5) {
   ansColor5 = brandLila;
@@ -2171,13 +2182,14 @@ ansColor1 = brandWhite;
     ansColor2 = brandMint;
     ansColor1 = brandLila;
   }
+  */
 
   }
 
 
 } else if(nxtNumber === 8) {
 
-  quest = "IN CHE PERCENTUALE SONO COERENTI I POST CON LA TUA PERSONALITÀ?"
+  quest = "IN CHE PERCENTUALE \nSONO COERENTI I POST \nCON LA TUA PERSONALITÀ?"
 
   // inizio animazione entrata
   if (coWidth3of1>(width/5)*1.5) {
@@ -2340,6 +2352,7 @@ ansColor1 = brandWhite;
     text("80-100%",(width/5)*2,0);
     pop();
 
+/*
   // cambio colore in hover
     if (mouseX >= (width/5)*4 && mouseY > height/5) {
   ansColor5 = brandLila;
@@ -2373,6 +2386,7 @@ ansColor1 = brandWhite;
     ansColor2 = brandMint;
     ansColor1 = brandLila;
   }
+  */
 
   }
 
@@ -2382,7 +2396,7 @@ ansColor1 = brandWhite;
   //-----------------------------------------------------------------------------
   //-----------------------------------------------------------------------------
   //-----------------------------------------------------------------------------
-  quest = "IN CHE PERCENTUALE PUBBLICHI CONTENUTI AUTOPRODOTTI?";
+  quest = "IN CHE PERCENTUALE PUBBLICHI \nCONTENUTI AUTOPRODOTTI?";
 
   // inizio animazione entrata
   if (spHeight1of1>((-height/5)*1.5)) {
@@ -2544,6 +2558,7 @@ ansColor1 = brandWhite;
         pop();
 
 
+/*
       // cambio colore in hover
         if (mouseX >= (width/5)*4 && mouseY > height/5) {
       ansColor3 = brandLila;
@@ -2577,7 +2592,7 @@ ansColor1 = brandWhite;
         ansColor1 = brandWhite;
         ansColor2 = brandLila;
       }
-
+*/
 
 
 
@@ -2586,7 +2601,7 @@ ansColor1 = brandWhite;
 
   }
 } else if (nxtNumber===10) {
-  quest = "HAI MAI SEGUITO CONSIGLI PER PROGETTARE LA TUA IDENTITÀ DIGITALE?";
+  quest = "HAI MAI SEGUITO \nCONSIGLI PER PROGETTARE \nLA TUA IDENTITÀ DIGITALE?";
 
   // inizio animazione entrata
   if (spHeight2of1>((-height/5)*1.5)) {
@@ -2671,13 +2686,14 @@ ansColor1 = brandWhite;
 
         push();
         textAlign(CENTER,CENTER);
-        fill(brandMint);
+        fill(brandBlack);
         noStroke();
         textFont(SuisseWorks);
         textSize(200);
         text("NO",(width/4),0);
         pop();
 
+/*
       // cambio colore in hover
         if (mouseX > (width/2)) {
 
@@ -2689,14 +2705,14 @@ ansColor1 = brandWhite;
         ansColor2 = brandBlack;
         ansColor1 = brandLila;
       }
-
+*/
 
 
 
     }
 
 } else if (nxtNumber===11) {
-  quest = "QUANTO TI IMPEGNI QUANDO FOTOGRAFI?";
+  quest = "QUANTO TI IMPEGNI \nQUANDO FOTOGRAFI?";
 
   // inizio animazione entrata
   if (spHeight3of1>((-height/5)*1.5)) {
@@ -2835,6 +2851,7 @@ ansColor1 = brandWhite;
         pop();
 
 
+/*
       // cambio colore in hover
         if (mouseX >= (width/5)*4 && mouseY > height/5) {
       ansColor3 = brandLila;
@@ -2868,7 +2885,7 @@ ansColor1 = brandWhite;
         ansColor1 = brandWhite;
         ansColor2 = brandLila;
       }
-
+*/
 
 
 
